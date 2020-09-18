@@ -1,0 +1,87 @@
+26.	Create an array of 17 elements in 5 rows.  And calculate sum of all elements.
+>   //26. Create an array of 17 elements in 5 rows.  And calculate sum of all elements.
+class CalSumArray{
+    public static void main(String args[]){
+        int a[]={1,2,3,4};
+        int b[]={5,6,7,8};
+        int c[]={9,10,11,12};
+        int d[]={1,2,3,4};
+        int e[]={5};
+        int arr[][]=new int[5][];
+        arr[0] =a;
+        arr[1] =b;
+        arr[2] =c;
+        arr[3]=d;
+        arr[4]=e;
+
+        int sum=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=0;j<arr[i].length;j++)
+            {
+                sum = sum+arr[i][j];
+            }
+        }
+        System.out.println(sum);
+
+    }
+}
+-------------------------------------------------------------------------
+
+27.	Write a program to fine the smallest and greatest number present in the array of integer type.
+>   //Sort a ten element array in descending order.
+import java.util.Scanner;
+class GreSho{
+    public static void main(String args[])
+    {
+        int arr[] = new int[]{5,2,34,4,2,6,22,8,90,10};
+       // int ar[] = new int[10];
+        for(int i=0;i<10;i++)
+        {
+           // int in=0;
+            for(int j=i+1;j<10;j++)
+            {
+                if(arr[i]<arr[j])
+                {
+                    int temp= arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                    //in++;
+                }
+            }
+        }
+
+        //for(int i=0;i<10;i++){
+            System.out.println("Smallest Number : "+arr[9]);
+            System.out.println("Greatest Number : "+arr[0]);
+
+        //}
+        
+
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+28.	Initialize one String type of array and print the elements using for each loop.
+>   
+import java.util.Scanner;
+class StringA{
+    public static void main(String args[])
+    {
+        String arr[] = {"Deepika","Dabi","Yash","Chetan","Rupali","Pratik","Shalini"};
+       for(String a : arr)
+        System.out.println(a);
+
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------
+
+29.	Write a program to print the total number of one-D arrays in a two-D array and the number of elements in every one-D array present in the two-D arrays.
+30.	Create an integer type 2-D array of size [3X3]. Take the elements from the user and then calculate the sum of the elements present in the diagonal.
+31.	Create a class Student with 2 data members rno and name. Create one method setData() that takes roll number and student name as parameter and stores them in data members rno and name. Create one more method showData() to print the data member values. Create another class ( main class) StudentDemo that creates Student class object and calls setData() and showData() methods.
+32.	Modify the above program (no. 30) to count the no of Student objects created. [ In this program static variable is required ]
+33.	Write a program to demonstrate functionalities of this keyword in java. 
+34.	Create a class Circle that has two data members, one to store the radius and another to store area and three methods first init() method to input radius from user, second calculateArea() method to calculate area of circle and third display() method to display values of radius and area. Create class CircleDemo ( main class) that creates the Circle object and calls init(), calculateArea() and display() methods.
+35.	Create a class MathOperation that has four static methods. add() method that takes two integer numbers as parameter and returns the sum of the numbers. subtract() method that takes two integer numbers as parameter and returns the difference of the numbers. multiply() method that takes two integer numbers as parameter and returns the product. power() method that takes two integer numbers as parameter and returns the power of first number to second number. Create another class Demo (main class) that takes the two numbers from the user and calls all four methods of MathOperation class by providing entered numbers and prints the return values of every method.
