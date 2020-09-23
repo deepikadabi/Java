@@ -1,0 +1,56 @@
+What is Abstraction and Inheritance?
+
+Why is JAVA Platform Independent?
+
+Explain OOPS concept.
+
+What is Object.
+
+Explain public static void main() in JAVA
+
+What is efficient version of Interpreter
+
+Difference between Static Binding and Dynamic Binding.
+
+What is equals method?
+
+Which Constructors are used in Java
+
+What is System.out.println()
+System = Inbuilt class in java.lang package
+out = java.out.printstream		instanct of printstream
+
+Can we declare constructor as private.
+=> Yes, we can declare a constructor as private. 
+If we declare a constructor as private we are not able to create an object of a class. 
+We can use this private constructor in the Singleton Design Pattern
+
+What is the use of this() and super()
+
+
+What is the first line of the defaul constructor
+
+Why pointers are not used in JAVA
+
+JVM architecture
+
+Why java is not called purely object oriented
+To overcome this Java uses Wrapper classes
+
+Does costructor return any value
+To return the current instance of that class
+It is alwas=ys with new keyword. Or else the object is not created properly
+
+Employee e = new Employee();
+
+Can we execute a program without main function
+Yes using static block for java version 1.6 or less
+
+Why Multiple inheritance is not supported in Java
+
+Can we overload main method
+=> Yes and the compiler will call the main() mehtod which holds the string array parameter
+
+
+
+

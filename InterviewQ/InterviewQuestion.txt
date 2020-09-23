@@ -1,0 +1,66 @@
+Abstract class must have only abstract methods. True or false?
+
+ Is it compulsory for a class which is declared as abstract to have at least one abstract method?
+
+Can we use the “abstract” keyword with constructor, Instance Initialization Block and Static Initialization Block?
+
+Why can final and abstract can not be used at a time?
+Can we instantiate a class which does not have even a single abstract method but declared as abstract?
+
+Can we declare abstract methods as private? Justify your answer?
+
+We can’t instantiate an abstract class. Then why constructors are allowed in abstract class?
+
+ Can we declare abstract methods as static?
+
+ Can a class contain an abstract class as a member?
+
+Abstract classes can be nested. True or false?
+
+Can we declare abstract methods as synchronized?
+
+Can we declare the local inner class as abstract?
+
+Can abstract method declaration include throws clause?
+
+Can we re-assign a value to a field of interfaces?
+
+Can we declare an Interface with an “abstract” keyword?
+
+ For every Interface in java, .class file will be generated after compilation. True or false?
+
+ Can we override an interface method with visibility other than public?
+
+ Can interfaces become local members of the methods?
+
+Can an interface extend a class?
+
+Like classes, does interfaces also extend Object class by default?
+
+Can interfaces have static methods?
+
+Can an interface have a class or another interface as it’s members?
+
+What are marker interfaces? What is the use of marker interfaces?
+
+What is the use of the final keyword in java?
+
+Can we change the state of an object to which a final reference variable is pointing?
+
+What is the main difference between abstract methods and final methods?
+
+What is the use of final class?
+
+Can we change the value of an interface field? If not, why?
+
+Where can we initialize a final non-static global variable if it is not initialized at the time of declaration?
+
+What are final class, final method and final variable?
+
+Where can we initialize a final static global variable if it is not initialized at the time of declaration?
+
+Can we use non-final local variables inside a local inner class?
+
+Can we declare constructors as final?
+
+Can you create an object without using a new operator in Java?

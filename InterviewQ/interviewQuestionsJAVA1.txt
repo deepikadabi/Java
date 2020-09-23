@@ -1,0 +1,67 @@
+What is JIT?
+
+What is JRE and JVM?
+
+Is JAVA Object based or object oriented?
+=>	Object Oriented : Supporst OOPS
+	Object based : supports oops except Inheritance and Polymorphism
+
+What are the features of JAVA.
+=>	Multithreaded, Robust , Reliable, Secure, Platform Independent
+
+What is JDK?
+
+How many memory locations are allocated by JVM?
+=>	The memory in the JVM is divided into five different parts namely− 
+	Method area− The method area stores the class code − code of the variables and methods.
+	Heap − The Java objects are created in this area. 
+	Java Stack− While running methods the results are stored in the stack memory
+
+
+Why is JAVA Platform Independent?
+
+What is class loader?
+
+How do you create array in JAVA?
+
+If I create an array of Strings. Can I store integer value in it.
+
+While defining an array Can i give a negative number.
+
+Can I pass a string to switch statement?
+
+Why array index starts at 0
+
+Array name is a constant pointer pointing to the base address.
+When you use arr[i] the compiler manipulates it as *(arr+i).
+Since int range is -128 to 127,the compiler thinks that 
+-128 to -1 are negative numbers and 0 to 128 are positive numbers.
+So array index always starts with zero
+
+
+Why do we need JDK?
+
+What is difference between JIT and interpreter?
+
+What are packages?
+
+Can we run a program without main?
+
+What is class path?
+
+Suppose I want to change the name of main() function
+=>	Yes,We can change the name of the main method if we can change the configurations 
+	of the JVM and let it look for a method with another name instead of main method.
+
+	At start JVM is looking from method public static void main with array of Strings as argument. 
+	So only thing you can do is rename argument args. 
+	If you want method like boot nobody stops you from doing something like this 
+	(personally I don't recommend that "pattern")
+
+
+Explain public static void main()
+
+When is main method called?
+javac filename.java 	or 	java filename
+compile time		or	runtime
+=> Runtime
