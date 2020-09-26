@@ -177,7 +177,7 @@ public class Bank_51 {
                         }
                     }
                     else{
-                        System.out.println("You dont have account. First create an account!!");
+                        System.out.println("You dont have account. First create an account");
                     }
             
                 }
