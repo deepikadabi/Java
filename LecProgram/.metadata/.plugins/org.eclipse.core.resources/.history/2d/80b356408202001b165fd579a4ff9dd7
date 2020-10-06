@@ -1,0 +1,16 @@
+package Exception;
+import java.io.IOException;
+public class Demo1 {
+
+	public static void main(String[] args) {
+		try {
+		int i = Integer.parseInt("abb"); //unchecked
+
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println(i);
+		
+	}
+
+}

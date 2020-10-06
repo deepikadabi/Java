@@ -1,0 +1,17 @@
+package mapPractice;
+
+import java.util.Collection;
+import java.util.HashMap;
+
+public class BasicOpMap {
+	public static void main(String args[]) {
+		HashMap<String, Object> m = new HashMap<>();
+
+		m.put("rno",123);
+		m.put("name","deep");
+		m.put("fee", 99);
+		m.put(null,909.38);
+		
+		Collection<Object> col = m.values();
+	}
+}

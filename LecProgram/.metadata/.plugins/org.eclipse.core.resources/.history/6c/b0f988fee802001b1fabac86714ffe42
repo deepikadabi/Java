@@ -1,0 +1,7 @@
+package mapPractice;
+
+public class BasicOpMap {
+	public static void main(String args[]) {
+		
+	}
+}

@@ -1,0 +1,11 @@
+package Exception;
+import java.io.IOException;
+public class Demo1 {
+
+	public static void main(String[] args) {
+		int i = Integer.parseInt("ab");
+		System.out.println(i);
+		
+	}
+
+}

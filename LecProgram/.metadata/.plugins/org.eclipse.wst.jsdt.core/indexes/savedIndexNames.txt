@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\CDAC\JAVA\CDAC\Java\LecProgram\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+409278949.index
+2590384238.index
+4281738798.index
+4107939639.index
+2915360825.index
+1603866865.index
+2580350975.index
