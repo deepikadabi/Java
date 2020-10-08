@@ -1,4 +1,4 @@
-52.	Input name of a person and count how many vowels it contains.  Use String class functions. 
+﻿52.	Input name of a person and count how many vowels it contains.  Use String class functions. 
 >   import java.util.Scanner;
 
 //52.	Input name of a person and count how many vowels it contains.  Use String class functions. 
@@ -28,24 +28,23 @@ public class Vowels {
 53.	Input data exactly in the following format, and print sum of all integer values. “67, 89, 23, 67, 12, 55, 66”.   (Hint use String class split method and Integer class parseInt method) .
 >   //53. Input data exactly in the following format, and print sum of all integer values.
 
-import java.util.Scanner;
-public class DataFor {
-    public static void main(String args[]){
-        String str = "67, 89, 23, 67, 12, 55, 66"; 
-        String[] arrOfStr = str.split("[,?.@] +"); 
+package AssignPractice;
 
-        int size = arrOfStr.length;
-      int [] arr = new int [size];
-      for(int i=0; i<size; i++) {
-         arr[i] = Integer.parseInt(arrOfStr[i]);
-      }
-      int sum=0;
-        for (int a=0; a<arr.length; a++) 
-            sum += arr[a];
-            System.out.println(sum); 
+public class Q51 {
 
-    } 
-    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "67, 89, 23, 67, 12, 55, 66";
+		String temp[] = str.split(", ");
+		int sum = 0;
+		for(String i : temp) {
+			sum += Integer.parseInt(i);
+		}
+		System.out.println("Sum of all the numbers in ["+str+"] = "+sum);
+	}
+
+}
+
 
 ------------------------------------------------------------------------------------------------------------
 

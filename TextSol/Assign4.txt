@@ -1,4 +1,4 @@
-33.	Write a program to demonstrate functionalities of this keyword in java. 
+﻿33.	Write a program to demonstrate functionalities of this keyword in java. 
 >   import java.util.Scanner;
 class Employee{
     private int empId;
@@ -24,6 +24,7 @@ class thiss{
 ----------------------------------------------------------------
 
 34.	Create a class Circle that has two data members, one to store the radius and another to store area and three methods first init() method to input radius from user, second calculateArea() method to calculate area of circle and third display() method to display values of radius and area. Create class CircleDemo ( main class) that creates the Circle object and calls init(), calculateArea() and display() methods.
+
 > import java.util.Scanner;
 class Circle{
     private int radius;
@@ -55,6 +56,7 @@ public class CircleDemo {
 --------------------------------------------------------
 
 35.	Create a class MathOperation that has four static methods. add() method that takes two integer numbers as parameter and returns the sum of the numbers. subtract() method that takes two integer numbers as parameter and returns the difference of the numbers. multiply() method that takes two integer numbers as parameter and returns the product. power() method that takes two integer numbers as parameter and returns the power of first number to second number. Create another class Demo (main class) that takes the two numbers from the user and calls all four methods of MathOperation class by providing entered numbers and prints the return values of every method.
+
 >   import java.util.Scanner;
 import java.lang.Math;
 
@@ -186,44 +188,47 @@ public class Person {
 Create another class EmployeeDemo (main class) that creates some Employee objects and calls Employee method to display no. of employees and total of their salaries.
 
 >   import java.util.Scanner;
+
+package com.assignments;
+
+import java.util.*;
+
 class Employee{
-    private int empNo;
-    private float salary;
-    private String empName;
-    static float totalSalary =0;
-
-    Employee(int empNo, String empName, float salary){
-        this.empNo = empNo;
-        this.salary = salary;
-        this.empName = empName;
-        this.totalSalary = totalSalary+salary;
-
+    int empNo;
+    static double totalSalary;
+    double sal;
+    static int empCount;
+    
+    
+    Employee(double sal){
+        this.sal = sal;
+        this.empNo++;
+        totalSalary+=sal;
+        empCount++;
     }
-    void show(){
-        //totalSalary = totalSalary+salary;
-        System.out.println("Employee number : "+empNo+"  Name:  "+empName+"  Salary : "+salary+"  Total Salary : "+totalSalary);
-    }
-
-   
-}
-
-public class TotSalary_38 {
-    public static void main(String args[]) {
-        //Employee emp = new Employee();
-        System.out.println("Enter number of employee : ");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for(int i = 1; i<= n;i++){
-            System.out.print("Enter salary of "+i+" & "+" Emplyee Name : ");
-            int sal = sc.nextInt();
-            String name = sc.next();
-            Employee emp = new Employee(i, name, sal);
-            emp.show();
-
-        }
-
+    
+    
+    public void display(){
+        System.out.println("Empcount : "+empCount+ " totalSalary : "+totalSalary);
     }
 }
+
+public class Question38 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		Employee e = new Employee(50000.00);
+	    Employee e1 = new Employee(50000.00);
+	    Employee e2 = new Employee(50000.00);
+	    Employee e3 = new Employee(50000.00);
+	    Employee e4 = new Employee(50000.00);
+	    Employee e5 = new Employee(50000.00);
+	    e.display();
+	}
+}
+
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -232,15 +237,70 @@ Create a main method in different class (say ProductDemo) and perform following 
     a. Accept information for five Product objects from user and store objects in an array
     b. Find pid of product with highest price. 
     c. Create a static method (with array of product’s object as argument) in Product class to calculate and return total amount spent on all products. ( amount spent on single product = price of product * quantity of product )
-
-> /*
-39.	Create class Product with three data members (pid, price, quantity) and parameterized constructor that takes values for all three data members.  
-Create a main method in different class (say ProductDemo) and perform following task:
-    a. Accept information for five Product objects from user and store objects in an array
-    b. Find pid of product with highest price. 
-    c. Create a static method (with array of product’s object as argument) in Product class to calculate and return total amount spent on all products. ( amount spent on single product = price of product * quantity of product )
 */
 
+class Product{
+    int pid;
+    double price;
+    int qty;
+    
+    public Product(){
+         this.pid = 0;
+        this.price = 0;
+        this.qty = 0;
+    }
+    
+    public Product(int pid, double price, int qty){
+        this.pid = pid;
+        this.price = price;
+        this.qty = qty;
+    }
+    
+    public void display(){
+        System.out.println("Pid : "+this.pid+", Price : "+this.price+", Quantity : "+this.qty);
+    }
+    
+    public static double calAmount(Product []arr){
+        double totalAmount=0;
+        for(int i =0; i<arr.length; i++){
+            double productAmt = arr[i].price * arr[i].qty;
+            totalAmount += productAmt;
+        }
+        return totalAmount;
+    }
+}
+
+public class Question39 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Product arr[] = new Product[5];
+	    
+	    for(int i =0; i<5 ; i++){
+	        System.out.println("Enter pid, price and quantity for the Product : ");
+	        int id = sc.nextInt();
+	        double price = sc.nextDouble();
+	        int q = sc.nextInt();
+	        
+	        Product item = new Product(id, price, q);
+	        arr[i] = item;
+	    }
+	    double max = 0;
+	    int id=arr[0].pid;
+	    int qty=arr[0].qty;
+	    for(int i=0; i<5; i++){
+	        if(max < arr[i].price){
+                max = arr[i].price;
+                id = arr[i].pid;
+                qty=arr[i].qty;
+	        }
+	    }
+	    
+	    System.out.println("Highest price Product :\n Pid : "+id+", Price : "+max+", quantity : "+qty);
+	    System.out.println("Total Amount Spent : "+Product.calAmount(arr));
+	}
+=====================================
 import java.util.Scanner;
 import java.lang.*;
 
@@ -466,6 +526,7 @@ class OneBHK{
         System.out.println("Room Area : "+roomArea+", Hall Area : "+hallArea+", Price : "+price);
     }
 }
+//Create another class TwoBHK which has (inherites) all the properties and behaviors of OneBHK and a new instance variable room2Area. Then create default constructor //to initialize all 4 instance variables and a parameterized constructor to take the values for initialization of all instance variables. Override show() method to //print all data member information.
 
 class TwoBHK extends OneBHK{
     double room2Area;

@@ -93,8 +93,6 @@ class OneDTwoD{
 
         for (int i = 0; i < arr.length; i++) { 
             counter++;
-            //e = scanner.nextInt(); 
-            //arr[i] = new int[e]; 
             System.out.println("Enter elements of "+i+" row ");
 
             for (int j = 0; j < arr[i].length; j++) { 
